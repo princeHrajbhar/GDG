@@ -6,6 +6,7 @@ export default function Home() {
    <p>
     3hbejdn ciubje vdcuibjn zdbkn mgvx c ihbmn ugirbkhfmn rdfucbkjn mtgcv kbjn mdgcvkjn gfvjk ,fg kbj nvb
     </p>
+    <p>kckn rjdvni knsdvzxcj nkdvm cxjker dcxjn ekvdmx</p>
    </div>
   );
 }
