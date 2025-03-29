@@ -2,7 +2,16 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { 
+  FaFacebook, 
+  FaTwitter, 
+  FaInstagram, 
+  FaLinkedinIn as FaLinkedin, 
+  FaYoutube,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt 
+} from "react-icons/fa";
 import Image from "next/image";
 
 export default function Footer() {
@@ -41,15 +50,15 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4 text-green-700">Contact Us</h3>
           <ul className="space-y-2 text-gray-700 text-sm md:text-base">
             <li className="flex items-center space-x-2">
-              <span className="text-green-600"><FaEnvelope /></span>
+              <FaEnvelope className="text-green-600" />
               <span>info@aifarming.com</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="text-green-600"><FaPhone /></span>
+              <FaPhone className="text-green-600" />
               <span>+1 234 567 890</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="text-green-600"><FaMapMarkerAlt /></span>
+              <FaMapMarkerAlt className="text-green-600" />
               <span>123 Green Field, Agrotech City</span>
             </li>
           </ul>
@@ -59,11 +68,21 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4 text-green-700">Follow Us</h3>
           <div className="flex space-x-4">
-            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-blue-500 transition"><FaFacebook size={24} /></motion.a>
-            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-blue-400 transition"><FaTwitter size={24} /></motion.a>
-            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-pink-500 transition"><FaInstagram size={24} /></motion.a>
-            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-blue-700 transition"><FaLinkedin size={24} /></motion.a>
-            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-red-500 transition"><FaYoutube size={24} /></motion.a>
+            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-blue-500 transition">
+              <FaFacebook size={24} />
+            </motion.a>
+            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-blue-400 transition">
+              <FaTwitter size={24} />
+            </motion.a>
+            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-pink-500 transition">
+              <FaInstagram size={24} />
+            </motion.a>
+            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-blue-700 transition">
+              <FaLinkedin size={24} />
+            </motion.a>
+            <motion.a href="#" whileHover={{ scale: 1.2 }} className="text-green-600 hover:text-red-500 transition">
+              <FaYoutube size={24} />
+            </motion.a>
           </div>
         </div>
       </motion.div>
