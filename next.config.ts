@@ -41,6 +41,30 @@ const nextConfig = {
         protocol: "https",
         hostname: "img.freepik.com", // Add this line
       },
+      {
+        protocol: "https",
+        hostname: "wi-sun.org", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "www.agriculture.com", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "www.invertisuniversity.ac.in", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "unity.edu", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "www.undp.org", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "static.vecteezy.com", // Add this line
+      },
     ],
   },
 };
