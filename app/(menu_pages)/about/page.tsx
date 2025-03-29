@@ -1,9 +1,10 @@
+import Landing_page from '@/components/about/Landing_page'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      hello
+      <Landing_page/>
     </div>
   )
 }
