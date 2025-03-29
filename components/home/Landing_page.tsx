@@ -8,7 +8,7 @@ const content = [
   {
     title: "Empowering Farmers with Innovation 🌱",
     vision: "Bringing technology to the heart of agriculture",
-    description: "We help farmers adopt gduhiknjmregkdfjbdskgfuhvjkbxj mbcv   ojirdhi hr iuhi ruhsxkh ihihgzhih iuhb jfiu i smart farming techniques to improve productivity and sustainability.",
+    description: "We help farmers adopt smart farming techniques to improve productivity and sustainability.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILVRVa_5hG0SVILqaWJ2Rv0HqZ2thFhVmaw&s",
     buttonText: "Learn More",
     buttonLink: "/about",
@@ -37,32 +37,32 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % content.length);
-    }, 5000); // Change content every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="h-screen flex items-center justify-center px-6 md:px-16 bg-gray-50">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl items-start md:items-center">
-        {/* Left Side - Moved Up & Shifted Right */}
-        <div className="relative flex flex-col justify-start md:justify-center text-center md:text-left -mt-16 md:-mt-28 md:ml-10">
+    <div className="h-screen flex items-center justify-center px-4 sm:px-6 md:px-16 bg-gray-50 text-center md:text-left">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl items-start gap-10"> {/* Changed items-center to items-start */}
+        {/* Left Side - Completely removed top spacing */}
+        <div className="relative flex flex-col justify-start items-center md:items-start">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
-              className="absolute w-full"
+              className="w-full"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 30 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-3xl md:text-5xl font-bold text-green-700">{content[index].title}</h1>
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-700 mt-2">{content[index].vision}</h2>
-              <p className="text-gray-600 mt-4">{content[index].description}</p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-700">{content[index].title}</h1>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 mt-2">{content[index].vision}</h2>
+              <p className="text-gray-600 mt-4 text-sm sm:text-base md:text-lg">{content[index].description}</p>
 
               <Link href={content[index].buttonLink}>
                 <motion.button
-                  className="mt-6 bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold transition hover:bg-green-700"
+                  className="mt-6 bg-green-600 text-white px-5 py-2 sm:px-6 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition hover:bg-green-700"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -73,12 +73,12 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        {/* Right Side - Adjusted Bottom Margin */}
-        <div className="relative flex justify-center items-center mb-8 md:mb-12">
+        {/* Right Side */}
+        <div className="relative flex justify-center items-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
-              className="absolute w-80 h-80 md:w-[450px] md:h-[450px] rounded-full overflow-hidden border-8 border-green-500 shadow-lg"
+              className="w-60 h-60 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 sm:border-8 border-green-500 shadow-lg"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
