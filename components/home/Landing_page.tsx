@@ -3,13 +3,14 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const content = [
   {
     title: "Empowering Farmers with Innovation 🌱",
     vision: "Bringing technology to the heart of agriculture",
     description: "We help farmers adopt smart farming techniques to improve productivity and sustainability.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILVRVa_5hG0SVILqaWJ2Rv0HqZ2thFhVmaw&s",
+    image: "https://community.nasscom.in/sites/default/files/media/images/DALL%C2%B7E%202024-05-15%2013.20.58%20-%20A%20vibrant%20agricultural%20scene%20showing%20a%20modern%20farm%20with%20a%20combination%20of%20traditional%20crops%20and%20technology.%20The%20image%20includes%20fields%20with%20healthy%20crop.jpg",
     buttonText: "Learn More",
     buttonLink: "/about",
   },
@@ -17,7 +18,7 @@ const content = [
     title: "Sustainable Farming for a Better Future 🌾",
     vision: "Innovative solutions for modern agriculture",
     description: "From AI-driven analytics to precision farming, we equip farmers with the latest technologies.",
-    image: "https://images.forbesindia.com/blog/wp-content/uploads/2023/01/Agriculture-is-a-potential-solution-to-meet-food-and-climategoals.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKCQQt0J4ekYdXG2BciFibW_c2cUvmcCCcjQ&s",
     buttonText: "Join Us",
     buttonLink: "/join",
   },
@@ -25,7 +26,7 @@ const content = [
     title: "The Future of Agriculture 🚜",
     vision: "Merging traditional wisdom with modern science",
     description: "We provide insights, data, and solutions to revolutionize the agricultural industry.",
-    image: "https://i.pinimg.com/736x/44/af/cc/44afcc4da4ed6700e84134ccb7fe3b09.jpg",
+    image: "https://media.licdn.com/dms/image/D4E12AQErQ0JWKpaU3g/article-cover_image-shrink_720_1280/0/1702932289325?e=2147483647&v=beta&t=JybxSi7zGcHofXrIiM77LISrjJFMZr3vLe_nzD-B98A",
     buttonText: "Get Started",
     buttonLink: "/start",
   },
@@ -44,8 +45,8 @@ export default function Home() {
 
   return (
     <div className="h-screen flex items-center justify-center px-4 sm:px-6 md:px-16 bg-gray-50 text-center md:text-left">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl items-start gap-10"> {/* Changed items-center to items-start */}
-        {/* Left Side - Completely removed top spacing */}
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl items-start gap-10">
+        {/* Left Side */}
         <div className="relative flex flex-col justify-start items-center md:items-start">
           <AnimatePresence mode="wait">
             <motion.div
@@ -78,16 +79,18 @@ export default function Home() {
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
-              className="w-60 h-60 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 sm:border-8 border-green-500 shadow-lg"
+              className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 sm:border-8 border-green-500 shadow-lg"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.8 }}
             >
-              <img
+              <Image
                 src={content[index].image}
                 alt="Agriculture"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </motion.div>
           </AnimatePresence>

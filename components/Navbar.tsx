@@ -42,10 +42,10 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/next.svg" // Image path
+            src="/logo.svg" // Image path
             alt="Logo"
-            width={40} // Set width
-            height={40} // Set height
+            width={60} // Set width
+            height={50} // Set height
             className="h-10 w-auto"
           />
         </Link>
