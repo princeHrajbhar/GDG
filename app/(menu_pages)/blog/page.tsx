@@ -13,10 +13,10 @@ import {
   FaUserFriends,
   FaCalendarAlt,
   FaArrowRight,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin
+//   FaFacebook,
+//   FaTwitter,
+//   FaInstagram,
+//   FaLinkedin
 } from "react-icons/fa";
 import Image from "next/image";
 
