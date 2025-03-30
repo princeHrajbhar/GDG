@@ -1,3 +1,4 @@
+
 import Initiatives from '@/components/about/Initiative'
 import Landing_page from '@/components/about/Landing_page'
 import React from 'react'
@@ -7,6 +8,7 @@ const page = () => {
     <div>
       <Landing_page/>
       <Initiatives></Initiatives>
+     
     </div>
   )
 }

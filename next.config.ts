@@ -65,6 +65,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "static.vecteezy.com", // Add this line
       },
+      {
+        protocol: "https",
+        hostname: "cdn.pixabay.com", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "wp.scoopwhoop.com", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "www.funtalk.ai", // Add this line
+      },
     ],
   },
 };
