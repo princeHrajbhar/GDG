@@ -26,7 +26,7 @@ export default function Footer() {
         {/* Logo & Description */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <motion.div whileHover={{ scale: 1.1 }}>
-            <Image src="/next.svg" alt="Logo" width={120} height={120} className="mb-4" />
+            <Image src="/logo.svg" alt="Logo" width={120} height={120} className="mb-4" />
           </motion.div>
           <p className="text-gray-600 text-sm md:text-base max-w-xs">
             Empowering farmers with AI-driven solutions for a better future.

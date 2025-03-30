@@ -124,7 +124,7 @@ export default function ContactPage() {
 
         <div className="absolute inset-0 overflow-hidden">
           <Image
-            src="/farm-field.jpg"
+            src="/grass.png"
             alt="Farm field background"
             fill
             className="object-cover opacity-30"
