@@ -77,6 +77,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.funtalk.ai", // Add this line
       },
+      {
+        protocol: "https",
+        hostname: "www.researchgate.net", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "static.independent.co.uk", // Add this line
+      },
+      {
+        protocol: "https",
+        hostname: "www.rsipvision.com", // Add this line
+      },
     ],
   },
 };
