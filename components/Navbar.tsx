@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
         {/* Login/Signup at the far right (Desktop) */}
         <div className="ml-4 hidden md:block">
           <Link
-            href="/auth/login"
+            href="/login"
             className="text-sm font-medium text-gray-700 hover:text-green-500"
           >
             Login/Signup
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
 
           {/* Login/Signup in Mobile Dropdown */}
           <Link
-            href="/auth/login"
+            href="/login"
             className="text-sm font-medium text-gray-700 hover:text-green-500"
           >
             Login/Signup
