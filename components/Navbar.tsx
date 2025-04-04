@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center space-x-8 w-full justify-center">
           {/* Menu Items (Desktop) */}
           <div className="hidden md:flex items-center space-x-8">
-            {[{ name: "Home", path: "/" }, { name: "About", path: "/about" }, { name: "Contact", path: "/contact" }, { name: "Blog", path: "/blog" }, { name: "Team", path: "/team" }].map((menu) => (
+            {[{ name: "Home", path: "/" }, { name: "AI Services", path: "/services" }, { name: "About", path: "/about" }, { name: "Contact", path: "/contact" }, { name: "Blog", path: "/blog" }, { name: "Team", path: "/team" }].map((menu) => (
               <Link
                 key={menu.name}
                 href={menu.path}
