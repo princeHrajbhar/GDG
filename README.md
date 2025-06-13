@@ -104,7 +104,7 @@ AgiTech addresses these pain points with AI-powered decision-making, real-time a
 
 1. **Clone the repository:**
 
-```bash
+
 git clone https://github.com/yourusername/agitech.git
 
 ---
