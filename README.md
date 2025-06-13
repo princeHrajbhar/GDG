@@ -10,11 +10,11 @@ The goal is to improve crop yields, predict diseases, optimize irrigation, and f
 
 ## 🎯 Project Objectives
 
-* Provide AI-based crop prediction, disease detection, and yield estimation.
-* Deliver soil analysis, weather forecasting, and irrigation optimization tools.
-* Bridge farmers with local marketplaces via digital listing and smart price forecasting.
-* Enable precision farming through IoT integration, drone imaging, and satellite data.
-* Facilitate data visualization and insights dashboards for farmers and agri-businesses.
+- Provide AI-based crop prediction, disease detection, and yield estimation.
+- Deliver soil analysis, weather forecasting, and irrigation optimization tools.
+- Bridge farmers with local marketplaces via digital listing and smart price forecasting.
+- Enable precision farming through IoT integration, drone imaging, and satellite data.
+- Facilitate data visualization and insights dashboards for farmers and agri-businesses.
 
 ---
 
@@ -22,11 +22,11 @@ The goal is to improve crop yields, predict diseases, optimize irrigation, and f
 
 The agricultural sector globally faces significant challenges:
 
-* **Climate unpredictability:** Irregular rainfall and temperature fluctuations.
-* **Crop diseases:** Undetected diseases causing massive yield losses.
-* **Soil degradation:** Mismanagement of soil nutrients and water.
-* **Market access:** Farmers lack real-time market demand and pricing data.
-* **Lack of modern tech adoption:** Limited awareness of AI and data-driven tools.
+- **Climate unpredictability:** Irregular rainfall and temperature fluctuations.
+- **Crop diseases:** Undetected diseases causing massive yield losses.
+- **Soil degradation:** Mismanagement of soil nutrients and water.
+- **Market access:** Farmers lack real-time market demand and pricing data.
+- **Lack of modern tech adoption:** Limited awareness of AI and data-driven tools.
 
 AgiTech addresses these pain points with AI-powered decision-making, real-time analytics, and predictive modeling tailored for agricultural applications.
 
@@ -35,59 +35,49 @@ AgiTech addresses these pain points with AI-powered decision-making, real-time a
 ## 💡 Key Features
 
 1. **Crop Prediction System:**
-
-   * Predicts suitable crops based on soil type, moisture, pH, weather forecasts, and region.
-   * Built with ML classification algorithms like Random Forest, XGBoost, and Deep Neural Networks.
+    - Predicts suitable crops based on soil type, moisture, pH, weather forecasts, and region.
+    - Built with ML classification algorithms like Random Forest, XGBoost, and Deep Neural Networks.
 
 2. **Plant Disease Detection:**
-
-   * Uses CNN (Convolutional Neural Networks) models to identify plant diseases from images.
-   * Integrates mobile image capture and classification APIs.
+    - Uses CNN (Convolutional Neural Networks) models to identify plant diseases from images.
+    - Integrates mobile image capture and classification APIs.
 
 3. **Soil Quality Analysis:**
-
-   * Analyzes soil pH, nitrogen, phosphorus, and potassium levels.
-   * Recommends fertilization and crop choices accordingly.
+    - Analyzes soil pH, nitrogen, phosphorus, and potassium levels.
+    - Recommends fertilization and crop choices accordingly.
 
 4. **Weather Forecasting & Irrigation Advisory:**
-
-   * Real-time and predictive weather data integration via third-party APIs.
-   * Automated irrigation advice based on evapotranspiration rates and weather forecasts.
+    - Real-time and predictive weather data integration via third-party APIs.
+    - Automated irrigation advice based on evapotranspiration rates and weather forecasts.
 
 5. **Market Price Prediction:**
-
-   * Predicts crop price trends using time series analysis (ARIMA, LSTM models).
-   * Connects farmers to regional buyers and mandis (markets).
+    - Predicts crop price trends using time series analysis (ARIMA, LSTM models).
+    - Connects farmers to regional buyers and mandis (markets).
 
 6. **Farmer Dashboard:**
-
-   * User-friendly dashboard built in **Next.js**.
-   * Real-time updates on weather, market prices, soil reports, disease alerts.
+    - User-friendly dashboard built in **Next.js**.
+    - Real-time updates on weather, market prices, soil reports, disease alerts.
 
 7. **Drone & IoT Data Integration:**
-
-   * Real-time crop health monitoring through aerial imaging.
-   * Integration with IoT devices for soil moisture and temperature sensing.
+    - Real-time crop health monitoring through aerial imaging.
+    - Integration with IoT devices for soil moisture and temperature sensing.
 
 8. **AI Chatbot Assistance:**
-
-   * Multilingual chatbot for farmers.
-   * Queries about crop diseases, weather updates, best practices.
+    - Multilingual chatbot for farmers.
+    - Queries about crop diseases, weather updates, best practices.
 
 9. **Digital Farmer Marketplace:**
-
-   * E-commerce-like listing for farmers to sell produce directly.
+    - E-commerce-like listing for farmers to sell produce directly.
 
 10. **Agri-Research & Analytics:**
-
-* Aggregated data for universities, NGOs, and policy makers.
+    - Aggregated data for universities, NGOs, and policy makers.
 
 ---
 
 ## 📊 Technologies & Tools Used
 
 | Category              | Tools / Libraries                                |
-| :-------------------- | :----------------------------------------------- |
+|----------------------|--------------------------------------------------|
 | Frontend              | Next.js, React, TailwindCSS                      |
 | Backend               | Node.js, Express, REST APIs, GraphQL             |
 | Machine Learning      | Scikit-Learn, TensorFlow, Keras, XGBoost, OpenCV |
@@ -104,168 +94,3 @@ AgiTech addresses these pain points with AI-powered decision-making, real-time a
 
 ## 📑 Project Structure
 
-```
-Agitech/
-├── frontend/
-│   ├── pages/
-│   ├── components/
-│   ├── public/
-│   └── tailwind.config.js
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── server.js
-├── ml-models/
-│   ├── crop-prediction/
-│   ├── disease-detection/
-│   ├── price-prediction/
-│   └── soil-analysis/
-├── iot-drone/
-│   └── sensor-data-collector/
-├── README.md
-└── package.json
-```
-
----
-
-## 🛠️ Installation & Setup
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/yourusername/agitech.git
-```
-
-2. **Navigate to the frontend and backend directories:**
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-```bash
-cd backend
-npm install
-npm run start
-```
-
-3. **ML models setup:**
-
-* Install Python dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-* Run Jupyter notebooks or REST endpoints for model inference.
-
----
-
-## 🖥️ Usage
-
-* Access frontend at `http://localhost:3000`
-* Backend API at `http://localhost:5000`
-* Crop prediction, disease detection, and market prediction accessible via UI
-* Connect IoT devices and drone data via `iot-drone` module
-
----
-
-## 📈 Development Challenges
-
-1. **Data Collection and Labeling:**
-
-   * Collecting clean, labeled agricultural datasets is difficult.
-   * Weather, soil, and crop disease datasets often unstructured or inaccessible.
-
-2. **Model Accuracy and Bias:**
-
-   * Crop and disease prediction models highly sensitive to regional parameters.
-   * Ensuring generalizability and minimizing prediction errors.
-
-3. **Hardware Integration:**
-
-   * IoT sensor integration and real-time communication with backend servers.
-   * Calibrating soil sensors, drone image processing under varying conditions.
-
-4. **API Integration Reliability:**
-
-   * Weather APIs prone to inconsistent data latency.
-   * Mitigating downtime via failover APIs and caching.
-
-5. **Multilingual Support:**
-
-   * Regional farmers require chatbot and UI in native languages.
-   * Integrated translation APIs and customized datasets for NLP models.
-
-6. **Scaling Infrastructure:**
-
-   * Handling large image uploads from drones and mobile devices.
-   * Deployment scaling via containerization (Docker) and AWS Lambda for model serving.
-
-7. **Network Constraints in Rural Areas:**
-
-   * Designed a lightweight PWA (Progressive Web App) for areas with limited bandwidth.
-
-8. **Farmer Onboarding & Training:**
-
-   * Created video tutorials and voice-guided onboarding via AI chatbot.
-
-9. **Model Drift and Seasonality:**
-
-   * Crop yield and price prediction models need frequent retraining.
-   * Automated cron jobs scheduled for retraining using recent data.
-
----
-
-## 🚀 Future Roadmap
-
-* Integrating blockchain-based produce traceability.
-* AI-based pest forecasting using drone image classification.
-* Expansion to livestock health monitoring.
-* Full offline support through mobile app.
-* Integration with government agri schemes APIs.
-* AI-powered credit risk assessment for farmers.
-
----
-
-## 🤝 Contributing
-
-We welcome community contributions!
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/yourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/yourFeature`)
-5. Create a pull request.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License — see the `LICENSE.md` file for details.
-
----
-
-## 📞 Contact
-
-* **Project Lead:** Prince Rajbhar
-  [GitHub](https://github.com/princerajbhar) | [LinkedIn](https://linkedin.com/in/prince-rajbhar-062996267)
-
-* **Technical Team:** Mehul Arora, Ishita Jaiswal, Aniket Jain, Mukul Rajput
-
----
-
-## 📌 Final Note
-
-**AgiTech** envisions a future where AI-driven agriculture is accessible to every farmer, from remote villages to high-tech agro-industries. Through continuous innovation, responsible AI deployment, and grassroots empowerment, this platform aspires to transform the way food is produced, distributed, and consumed in India and globally.
-
-Every line of code here aims not just for technological advancement but for tangible, human-centric impact in t
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-#   G D G 
- 
- 
